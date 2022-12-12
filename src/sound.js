@@ -8,4 +8,4 @@ const soundEnd = new Howl({
 
 soundEnd.play();
 
-// не смог реализовать
+// не смог реализовать.
