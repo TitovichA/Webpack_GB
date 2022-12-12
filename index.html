@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime superapp</title>
+    <script type="module" src="./src/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <button id="switcher" onclick="switcher()">Таймер/Калькулятор дат </button>
+
+        <div id="timer" style="display: block">
+            <h3>Таймер</h3>
+            <div id="timerValue">
+                <input id="hour" type="number" max="99" min="0" value="0">:</span>
+                <input id="minute" type="number" max="60" min="0" value="0">:</span>
+                <input id="sec" type="number" max="60" min="0" value="0"></span>
+            </div>
+            <div id="controls">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+
+        <form id="datecalc" style="display: none">
+            <h3>Калькулятор дат</h3>
+            <label>
+                <strong>Первая дата:</strong>
+                <input type="date" name="firstDate" />
+            </label>
+            <label>
+                <strong>Вторая дата:</strong>
+                <input type="date" name="secondDate" />
+            </label>
+            <button type="submit">Расчитать промежуток</button>
+            <p id="datecalc__result"></p>
+        </form>
+
+    </div>
+
+    <script src="./src/timer.js"></script>
+    <script src="./src/switcher.js"></script>
+
+</body>
+
+</html>
