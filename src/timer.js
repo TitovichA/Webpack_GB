@@ -1,3 +1,4 @@
+import { soundTick } from "./sound.js"
 
 let start = document.getElementById('start');
 let stop = document.getElementById('stop');
@@ -18,6 +19,7 @@ start.addEventListener('click', function () {
         }, 1000);
     }
     startInterval();
+    soundTick.play();
 })
 
 reset.addEventListener('click', function () {
@@ -26,6 +28,7 @@ reset.addEventListener('click', function () {
     s.value = 0;
 
     stopInterval();
+    soundTick.stop();
 })
 
 function timer() {
@@ -33,14 +36,19 @@ function timer() {
         h.value = 0;
         m.value = 0;
         s.value = 0;
+        soundTick.stop();
+
     } else if (s.value != 0) {
         s.value--;
+
     } else if (m.value != 0 && s.value == 0) {
         s.value = 59;
         m.value--;
+
     } else if (h.value != 0 && m.value == 0) {
         m.value = 60;
         h.value--;
+
     }
     return;
 }
@@ -51,4 +59,5 @@ function stopInterval() {
 
 stop.addEventListener('click', function () {
     stopInterval();
+    soundTick.stop();
 })

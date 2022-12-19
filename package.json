@@ -1,0 +1,36 @@
+{
+  "name": "lesson1",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000W\u0000e\u0000b\u0000p\u0000a\u0000c\u0000k\u0000_\u0000G\u0000B\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "serve": "webpack serve --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TitovichA/Webpack_GB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TitovichA/Webpack_GB/issues"
+  },
+  "homepage": "https://github.com/TitovichA/Webpack_GB#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-bundle-analyzer": "^4.7.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "howler": "^2.2.3",
+    "luxon": "^3.1.1"
+  }
+}

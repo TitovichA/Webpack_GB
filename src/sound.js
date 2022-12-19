@@ -1,11 +1,14 @@
-import { Howl } from './howler.core.js';
+import '../node_modules/howler/dist/howler.min.js';
 
-const soundEnd = new Howl({
-    src: ['src/mediaSound/endTimerSound.mp3'],
+
+export const soundTick = new Howl({
+    src: ['src/media/tik-tak.mp3'],
     html5: true,
     volume: 0.3,
+    loop: true
 });
 
-soundEnd.play();
 
-// не смог реализовать.
+
+
+
